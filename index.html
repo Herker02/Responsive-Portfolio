@@ -2,51 +2,99 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>About | Ker Her</title>
-  <link rel="stylesheet" type="text/css" href="./assets/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ker Her | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
 <body>
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Ker Her</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1><strong>About me</strong></h1>
-
-      <img src="assets/images/selfie.jpg" class="auth-image" alt="Your Name">
-
-        <p>Welcome to my page! My name is Ker and I am jr web developer.</p>
-        <p>Some of my interests are learning new material in programming by watching videos, learning from peers, or taking online quizzes.</p>
+    <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+    <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas="" data-position="left" aria-hidden="true" data-offcanvas="c2f0mv-offcanvas">
+    <div class="row column">
+    <br>
+    <img class="thumbnail" src="assets/images/selfie.jpg">
+    <h5>Ker Her</h5>
+    <p>Welcome to my page! My name is Ker and I am entry level Full Stack Web Developer.</p>
+        <p>Some of my interests are learning new programming languages and continously improving my current skillset</p>
         <p>Outside of programming, I like to excercise, get outdoors, catch up with friends, and try new experiences I have never done before.
       </p>
-
-    </section>
-
+    </div>
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content="">
+    <div class="title-bar hide-for-large">
+    <div class="title-bar-left">
+    <button class="menu-icon" type="button" data-open="my-info" aria-expanded="false" aria-controls="my-info"></button>
+    <span class="title-bar-title">Ker Her</span>
+    </div>
+    </div>
+    <div class="callout primary">
+    <div class="row column">
+    <h1> Hello! Welcome to my Portfolio</h1>
+    <p class="lead"></p>
+    </div>
+    </div>
+    <div class="row small-up-2 medium-up-3 large-up-4">
+    <div class="column">
+    <img class="thumbnail-burger" src="assets/images/burger app.PNG">
+    <!-- need to fix link so it works -->
+    <h5><button><a href ="https://stormy-forest-83800.herokuapp.com/">Devour Da Burger</a></button></h5>
+    </div>
+    <div class="column">
+    <img class="thumbnail" src="assets/images/playlist.PNG">
+    <h5><button><a href = "https://new-project-2.herokuapp.com/">Community Playlist</a></button></h5>
+    </div>
+    <div class="column">
+    <img class="thumbnail" src="assets/images/gif.PNG">
+    <h5><button><a href="https://herker02.github.io/Gif/">Find Gifs</a></button></h5>
+    </div>
+    <div class="column">
+    <img class="thumbnail" src="assets/images/space.PNG">
+    <h5><button><a href="https://michaelabee.github.io/Cool-Space-Pix/">Cool Space Pics</a></button></h5>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+    <div class="medium-6 columns">
+    <h3>Inquiries</h3>
+    <p></p>
+    <ul class="menu">
+    <li><a href="https://github.com/Herker02">Github</a></li>
+    <li><a href="https://www.facebook.com/ker.her.7">Facebook</a></li>
+    <li><a href="https://www.linkedin.com/in/ker-her-195140181/">LinkedIn</a></li>
+    </ul>
+    </div>
+    <div class="medium-6 columns">
+    <!-- <label>Name
+    <input type="text" placeholder="Name">
+    </label>
+    <label>Email
+    <input type="text" placeholder="Email">
+  </label>
+  <label>
+      Message
+      <textarea placeholder="Something nice to say!""></textarea>
+  </label> -->
+  <form action="mailto:herker02@gmail.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    E-mail:<br>
+    <input type="text" name="mail"><br>
+    Comment:<br>
+    <input type="text" name="comment" size="50"><br><br>
+    <input type="submit" class="button expanded" value="Submit">
+    </form>
   </div>
-
-  <footer>
-      
-    <div class="row"></div>
-        <div class="col-md-12">
-            <div class="container">
-             Copyright &copy;
-            </div>
-        </div>
-  </footer>
-
-  <script type="text/javascript" src="assets/js/app.js"></script>
-</body>
+  </div>
+    <div class="js-off-canvas-exit"></div>
+  </div>
+  </div>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+    
+    </body>
 
 </html>
